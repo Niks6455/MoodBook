@@ -355,7 +355,7 @@ hr {
 .F{
   width: 50%;
   height: 500px;
-  background: url("../image/imade/gg.png") center no-repeat;
+  background: url("../image/people/Vse.jpg") center no-repeat;
 }
 
 .S{
@@ -417,7 +417,7 @@ hr {
 
 .people__inner img{
   width: 250px;
-  height: 270px;
+  height: 320px;
   background-color: #333;
 }
 
@@ -454,7 +454,7 @@ hr {
     height: auto;
     transition: opacity .1s linear;
     width: 250px;
-    height: 270px;
+    height: 320px;
 }
 
 .card__text {

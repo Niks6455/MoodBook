@@ -363,9 +363,12 @@ left:30px;
   height: 700px;
   margin-top: 115px;
  margin-bottom: -50px;
+
 }
 
-
+a{
+   text-decoration: none;
+}
 .pop_content:hover{
   opacity: 0.8;
 }
@@ -381,6 +384,7 @@ left:30px;
   position: relative;
   top: 100px;
   margin-bottom: 150px;
+
 }
 .pop__name__text{
   width: 100%;
@@ -398,7 +402,7 @@ max-width: 1800px;
  text-align: center;
  font-size: 18px;
  color: #ffffff;
- font-weight: 600;
+ font-weight: 600; 
 }
 .pop_content img{
   height: 260px;
@@ -420,6 +424,7 @@ max-width: 1800px;
   margin: 10px;
   z-index: 2;
 }
+
 /* podbor */
 .podbor{
   background: url(../image/background/прямая.png) center no-repeat;/* адресс изображения */
@@ -427,7 +432,8 @@ max-width: 1800px;
   background-size: cover;
   width: 100%;
   height:260px;
-  margin-top: 100px;
+  top: 80px;
+  position: relative;
 }
 .podbor_zag{
   text-decoration: none;
@@ -449,6 +455,7 @@ max-width: 1800px;
   width: 100%;
   margin: 0;
   padding: 0;
+
 }
 .podbor_text{
   margin-top: 20px;
@@ -458,7 +465,9 @@ max-width: 1800px;
   max-width: 200px;
   font-family: 'Exo 2' , sans-serif;
   font-weight: 700;
+ 
 }
+
 .chto_podrob__inner{
   width: 100%;
   display: flex;
@@ -479,7 +488,11 @@ max-width: 1800px;
   color: white;
   cursor: pointer;
 }
-
+.podbor_text--right{
+  position: relative;
+  top: 30px;
+  left: 0px;
+}
 /* nav */
 .nav__link{
     text-decoration: none;
@@ -632,12 +645,13 @@ to {
     .podbor_text{
       font-size: 20px;
       left: 20px;
+     
     }
     .podbor_button{
       top:-70px;
      left:410px;
     }
-  
+    
 }
 @media (max-width: 990px){
 .chto_zaglav{
@@ -678,6 +692,8 @@ to {
   position: relative;
   top: 0px;
 }
+
+
 }
 
 @media (max-width: 930px){
@@ -727,13 +743,25 @@ to {
 
     .podbor_text{
       font-size: 18px;
-      left: 50px;
-      top:0px;
+     
     }
     .podbor_button{
     font-size: 18px;
     font-weight: 500; 
     }
+    .podbor_text--right{
+      margin-right: 15px;
+    
+     
+    }
+}
+@media (max-width: 800px){
+  .podbor_text{
+    font-size: 14px;
+   max-width: 150px;
+   
+  }
+ 
 }
 @media (max-width: 771px){
   .chto_container1,.chto_container2,.chto_container3{
@@ -748,10 +776,7 @@ to {
     position: relative;
     top: -100px;
   }  
-  .podbor{
-    position: relative;
-    top: -100px;
-  }
+  
   /* genre */
   .genre__name{
       font-size: 16px;
@@ -777,17 +802,16 @@ to {
    margin: 10px;
  }
 
-   .podbor_text{
-     font-size: 14px;
-    max-width: 150px;
-     top:0px;
-   }
    .podbor_button{
      top:0px;
    padding: 20px 60px;
     left:270px;
    }
+   .podbor_text--right{
+    margin-right: -5px;
   
+   
+  }
    
 }
 @media (max-width: 586px){
@@ -805,7 +829,7 @@ to {
   .pop_content img,.pop_content{
     height: 140px;
     width: 130px;
-  margin-right: 20px;
+    margin-right: 15px;
   }
   .pop__bg{
     height: 80px;
@@ -828,9 +852,7 @@ to {
     top: -10px;
   }
   /* podb */
-  .podbor{
-    top: -220px;
-  }
+  
   .chto_container3{
     top: -270px;
     margin-bottom: -200px;
@@ -891,30 +913,24 @@ to {
   margin-right: 15px;
   }
 
+  .podbor_text--right{
+   top: 20px;
+  }
   .podbor_text{
     font-size: 14px;
     max-width: 150px;
-    top:0px;
+   
   }
   .podbor_button{
     top:0px;
     left:180px;
+    padding: 10px 40px;
+    margin-top: 10px;
   }
 
     .podbor_zag{
     font-size: 20px;
-      
     } 
-    .podbor_text{
-      font-size: 14px;
-      top:0px;
-    }
     
-    .podbor_button{
-      padding: 15px 50px;
-      top:0px;
-      left:80px;
-      margin-top: 10px;
-    }
 }
 

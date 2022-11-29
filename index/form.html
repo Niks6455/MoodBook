@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/aos.css">
     <link rel="stylesheet" href="../assets/css/form__style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Exo+2:wght@100;200&family=Raleway:wght@500;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Modbook</title>
 </head>
 <body>
-    
   <!-- header -->
     <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">
-                    <a href="../index.html"><img src="../assets/image/logo/logo1.png" alt=""></a>
+                <div class="header__logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <img src="../assets/image/logo/logo1.png" alt="">
                 </div>
     
                 <nav class="nav" id="nav">
-                    <a class="nav__link" href="../index.html">Главная</a>
-                    <a class="nav__link" href="../index/vse__book.html">Книги</a>
-                    <a class="nav__link" href="#">О нас</a>
-                    <a class="nav__link" href="#" data-scroll="#head">Предложить свою книгу</a>
+                    <a class="nav__link" href="../index.html" >Главная</a>
+                    <a class="nav__link" href="../index/vse__book.html" data-scroll="#">Книги</a>
+                    <a class="nav__link" href="#" data-scroll="#">О нас</a>
+                    <a class="nav__link" href="#" data-scroll="#">Предложить свою книгу</a>
                 </nav>
                 
                 <button class="nav-toggle" id="nav_toggle" type="button">
@@ -33,54 +33,48 @@
     </header>
     
     
-<div class="page" id="head">
+<div class="page">
         
         <div class="wriper">
             <div class="container">
                 <div class="form">
-                   
-                    <form  id="form" class="form__body">
+     
+                       <form method="post" action=".\..\php\form.php" id="form" class="form__body">
                         <div class="form__bg">
-                            <h1 class="form__title" id="top">Расскажите нам о книге </h1>
+                            <h1 class="form__title" id="top" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="2000">Расскажите нам о книге </h1>
                                 <div class="form__street">
-                                    <div class="form__inner">  
+                                    <div class="form__inner" data-aos="flip-up" data-aos-delay="100"  data-aos-duration="2000">  
                                     <div class="form__item">
-                                        <input type="text" type="text" name="name" id="formName" class="form__input" placeholder="Название книги...*">
+                                        <input type="text" name="name" id="formName" class="form__input" placeholder="Название книги...*">
                                     </div>
 
                                     <div class="form__item">
-                                        <input type="text" type="text" name="name" id="formName" class="form__input" placeholder="Год выпуска...*">
+                                        <input type="text" name="god" id="formName" class="form__input" placeholder="Год выпуска...*">
                                     </div>
 
                                     <div class="form__item">
-                                        <input type="text" type="text" name="name" id="formName" class="form__input" placeholder="Автор...*">
+                                        <input type="text" name="avtor" id="formName" class="form__input" placeholder="Автор...*">
                                     </div>
 
                                     <div class="form__item">
-                                        <textarea name="Message" id="formMessage" class="form__textarea" placeholder="Отзыв..."></textarea>
+                                        <textarea name="message" id="formMessage" class="form__textarea" placeholder="Отзыв..."></textarea>
                                     </div>
 
                                     <div class="form__item">
-                                        <input type="text" type="text" name="name" id="formName" class="form__input" placeholder=" Инициалы...*">
+                                        <input type="text" name="person" id="formName" class="form__input" placeholder=" Инициалы...*">
                                     </div>
                                 
-                                <div class="file">
-                                    <div class="file__inner">
-                                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
-                                            <div class="file__button">Добавить фото</div>
-                                        </div>
-                                        <div id="formPreview" class="file__preview"></div>
-                                </div>
+                                
                                 
                                 <div class="form__item">
                                     <div class="checkbox">
                                         <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input  _req">
-                                        <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a class="license__btn"href="#">условием</a></span></label>
+                                        <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a class="license__btn" href="#">условием</a></span></label>
                                     </div>
                                     </div>
 
                                     <div class="form__btn">
-                                        <button class="form__button" data-scroll="#head">Отправить</button>
+                                        <button type="submit" class="form__button">Отправить</button>
                                     </div>
                                 </div>
                             </div>
@@ -90,22 +84,7 @@
             </div>
         </div>
 
-   
-    
-     
-        <div class="footer">
-            <div class="container">
-                <div class="footer__flex">
-                    <div class="footer__inner">
-                        <div class="footer__text">Все права защищены MoodBook</div>
-                        <div class="footer__text">Контакты: <a>moodbok@gmail.com</a></div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        
-    
-        <div class="vse"></div>
+    <div class="vse">
         <div class="vse__inner">
             <div class="vse__text">
                 <p>Благодарим вас за предложенное произведение!<br> Хотите вернуться на главную страницу или предложить ещё?</p>
@@ -115,15 +94,25 @@
                     <div class="block">
                         <a href="../index.html" class="form__go__back obch--form__btn">На главную</a>
                     </div>
-                    <div class="block"></div>
-                        <a href="#" class="form_escho obch--form__btn" >Предложить ещё</a>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
+     
     
     
-        
+     
+        <div class="footer">
+            <div class="container">
+                <div class="footer__flex">
+                    <div class="footer__inner">
+                        <div class="footer__text">Все права защищены MoodBook</div>
+                        <div class="footer__text">Контакты: <a>MoodBooK@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
         <div class="license__inner">
             <div class="license__head">
                 <button class="license__btn__2">X</button>
@@ -187,15 +176,13 @@
             </div>
         </div>
        
-   
-
 </div>
+    <script src="../js/aos.js"></script>
+    <script src="../js//index.js"></script>
+    <script src="../js//form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/boorger.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="../js/scroll.js"></script>
-<script src="../js/form.js"></script>
-<script src="../js/boorger.js"></script> 
 </body>
 
 </html>
-

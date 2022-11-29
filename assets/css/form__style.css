@@ -249,7 +249,9 @@ width: 100%;
     width: 700px;
     height: 48px;
 }
-
+.form__input._error{
+   box-shadow: 0 0 15px  rgb(139, 29, 29);
+}
 .form__btn{
    
     width: 100%;
@@ -275,52 +277,6 @@ width: 100%;
 }
 
 
-/* file */
-.form__inner .file{
-    width: 650px;
-    justify-content: center;
-}
-
-.file__input{
-    position: absolute;
-    left: 200px;
-    z-index: 2;
-    width: 170px;
-    height: 25px;
-    cursor: pointer;
-    font-size: 0;
-    opacity: 0; 
-  
-}
-
-.file__inner:hover .file__button{
-    color: #a33f3f;
-}
-
-.file__button{
-    position: absolute;
-    left: 200px;
-    
-  margin-top: -10px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #000000;
-}
-
-.file__preview{
-    display: inline-block;
-    max-width: 100px;
-    padding: 10px 0px 0px 0px;
-    position: relative;
-    bottom: -25px;
-    left: -25px;
-   
-}
-
-.file__preview img{
-    max-width: 200px;
-    max-height: 240px;
-}
 /* checkbox */
 .checkbox._error .checkbox__label::before{
     box-shadow: 0 0 15px #bd0a0a;
@@ -403,16 +359,20 @@ transition: color 0.2s linear;
     color: #ae0d0d;
     cursor: pointer;
 }
-/* license */
+
+
+/* license  */
 .license__inner{
     display: none;
 }
+
 .license__inner.active{
     width: 100%;
     display: flex;
     justify-content: center;
     
 } 
+
 .license__btn__2{
     display: flex;
     width: 100%;
@@ -473,7 +433,7 @@ transition: color 0.2s linear;
     display: none;
     width: 100%;
 }
-.vse.active{
+.vse._sending{
     display: block;
     position: absolute;
     top: 0;left: 0;right: 0;bottom: 0;
@@ -486,7 +446,7 @@ transition: color 0.2s linear;
 }
 
 
-.vse__inner.active{
+.vse__inner._sending{
     display: block;
     position: absolute;
     left: 0;
@@ -510,6 +470,7 @@ transition: color 0.2s linear;
 }
 .vse__button{
     display: flex;
+    width: 100%;
     justify-content: center;
     margin-right: 0;
 }
@@ -527,17 +488,15 @@ transition: color 0.2s linear;
 }
 .obch--form__btn:hover{
     background-color: #c53939;
-    
+      cursor: pointer;
 }
 
-.form__go__back{
-    margin-right: 100px;
-}
 .form_escho{
     position: relative;
     top: -20px;
     margin-left: 100px;
     padding: 22px 120px;
+     cursor: pointer;
 }
 
 @media (max-width: 1400px){
